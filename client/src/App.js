@@ -59,7 +59,6 @@ class App extends Component {
     .catch(err => console.log(err))
     .then(res => res.json())
     .then(weather => {
-      console.log(weather);
       this.setState({ weather });
     })
     
