@@ -4,14 +4,7 @@ const ENV = process.env.NODE_ENV;
 
 var CONNECTION_STRING;
 
-if(ENV === 'production'){
-CONNECTION_STRING = process.env.DATABASE_URL || 'postgresql://postgres:Asdf@1234@localhost:5432/dnaredla';
-}
-else{
- CONNECTION_STRING = process.env.DATABASE_URL || 'postgresql://postgres:Asdf@1234@localhost:5432/dnaredla';  
-}
-
-//const CONNECTION_STRING = process.env.DATABASE_URL || 'postgresql://postgres:Asdf@1234@localhost:5432/dnaredla';
+const CONNECTION_STRING = process.env.DATABASE_URL || 'postgresql://postgres:Asdf@1234@localhost:5432/dnaredla';
 const SSL = process.env.NODE_ENV === 'production';
 
 class Database {
