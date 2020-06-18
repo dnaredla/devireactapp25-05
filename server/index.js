@@ -37,7 +37,7 @@ if(ENV == 'production'){
 app.listen(PORT, () => {
 console.log(`server yes listining on port ${PORT}..`);
 });
-//Testing to check the code deployments
+
 db.query('SELECT now()',(err,res)=>{
     if(err.error)
     return console.log('@@@@'+err.error);
