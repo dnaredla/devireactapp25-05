@@ -1,4 +1,4 @@
-const db = require('../Database');
+const db = require('../database');
 
 class cities{
     static retrieveAll (callback){
