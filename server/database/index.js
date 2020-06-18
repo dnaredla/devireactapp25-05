@@ -2,8 +2,15 @@ var { Pool } = require('pg');
 
 const ENV = process.env.NODE_ENV;
 
-var CONNECTION_STRING;
+/*var CONNECTION_STRING;
 
+if(ENV === 'production'){
+    CONNECTION_STRING = process.env.DATABASE_URL || 'postgresql://username:pgpassword@db:5432/mydatabase';
+}
+else{
+    CONNECTION_STRING = process.env.DATABASE_URL || 'postgresql://postgres:Asdf@1234@localhost:5432/dnaredla';
+}
+*/
 const CONNECTION_STRING = process.env.DATABASE_URL || 'postgresql://postgres:Asdf@1234@localhost:5432/dnaredla';
 const SSL = process.env.NODE_ENV === 'production';
 
