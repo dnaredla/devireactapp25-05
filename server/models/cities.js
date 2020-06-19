@@ -3,7 +3,6 @@ const db = require('../database');
 class cities{
     static retrieveAll (callback){
    db.query('SELECT city_name from cities', function(err, res){
-
        if(err.error)
        return callback(err);
        callback(res);

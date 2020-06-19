@@ -11,7 +11,9 @@ else{
     CONNECTION_STRING = process.env.DATABASE_URL || 'postgresql://postgres:Asdf@1234@localhost:5432/dnaredla';
 }
 */
-const CONNECTION_STRING = process.env.DATABASE_URL || 'postgresql://postgres:Asdf@1234@localhost:5432/dnaredla';
+//const CONNECTION_STRING = process.env.DATABASE_URL || 'postgresql://postgres:Asdf@1234@localhost:5432/dnaredla';
+const CONNECTION_STRING = process.env.DATABASE_URL || 'postgres://bupotqlyaufdfd:a3888acada17d8d6fd7480759d46acd7143b001f1ad26c6f3950e53117f3d633@ec2-52-20-248-222.compute-1.amazonaws.com:5432/d53pse8l0okfjb'
+console.log('@@@@@'+CONNECTION_STRING);
 const SSL = process.env.NODE_ENV === 'production';
 
 class Database {
