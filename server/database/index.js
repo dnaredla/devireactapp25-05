@@ -19,15 +19,17 @@ class Database {
             password: 'a3888acada17d8d6fd7480759d46acd7143b001f1ad26c6f3950e53117f3d633',
             port: 5432,
             ssl: {rejectUnauthorized: false}
-          })*/
-        if(process.env.NODE_ENV === 'production')  
-        {
-            this._pool = new Pool({
-                user: 'bupotqlyaufdfd',
+          })
+           user: 'bupotqlyaufdfd',
                 host: 'ec2-52-20-248-222.compute-1.amazonaws.com',
                 database: 'd53pse8l0okfjb',
                 password: 'a3888acada17d8d6fd7480759d46acd7143b001f1ad26c6f3950e53117f3d633',
                 port: 5432
+          */
+        if(process.env.NODE_ENV === 'production')  
+        {
+            this._pool = new Pool({
+               
               })
         }
         else{
